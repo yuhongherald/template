@@ -414,6 +414,7 @@ figure.figure2.hover:after {
 .btn-group.open .dropdown-toggle {
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);
 }
+
 .bootstrap-select > .dropdown-toggle.bs-placeholder{
     color: #202020 !important;
 }
@@ -1248,8 +1249,17 @@ figure.figure2.hover:after {
 .genre-item > .row > div > div {
     padding: 0.5px;
 }
-/* 2 Events Details */
+/* 2 Page Events Details */
 /* 2.1 Slider Events Detail*/
+.search-button{
+    font-size: 14px; /* Edited */
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 45px;
+    padding: 15px 40px;
+    background-color: #28b6ff;
+    border-color: #28b6ff;
+}
+
 .slider-eventdetails .swiper-slide .text-slider {
     position: absolute;
     z-index: 2;
@@ -3103,9 +3113,11 @@ figure.figure2.hover:after {
 	.sidebar-popularcategories {
 	    margin-bottom: 60px;
 	}
+	/*
     .sort-by{
         margin-top: 90px;
     }
+	*/
     .tagss{
         width: 90px;
     }
@@ -3208,7 +3220,39 @@ figure.figure2.hover:after {
         margin-top: -20px;
     }
 }
+
+.absolute {
+	position: absolute;
+}
+
 @media only screen and (max-width: 767px){
+	/*Lets say I think the picture at the top of the page should be hidden*/
+	.mobile-hidden{
+		display:none;
+	}
+	
+	.mobile-width{
+		width:100%;
+	}
+
+	.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+		width:100%;
+	}
+
+	.contents{
+		min-height:50px;
+		max-height:100px;
+		overflow-y:hidden;
+	}
+	
+	.contents>p{
+		margin:0px;
+	}
+	
+	#navigation-header{
+		position:relative;
+	}
+		
     .navbar-brand{
         margin-top: -13px;
     }
