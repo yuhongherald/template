@@ -3225,6 +3225,10 @@ figure.figure2.hover:after {
 	position: absolute;
 }
 
+.pink-borderless {
+    background-color: #f55692;
+}
+
 @media only screen and (max-width: 767px){
 	/*Lets say I think the picture at the top of the page should be hidden*/
 	.mobile-hidden{
